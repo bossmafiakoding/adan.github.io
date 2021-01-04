@@ -148,7 +148,7 @@
                             <div class="row mt-3 mb-3 animate__animated animate__bounceIn animate__delay-2s">
                                 <div class="col-auto">
                                     <a href="#" onclick="change_frame(4)" id="link-download" class="link-light"
-                                        data-bs-toggle="tooltip" data-bs-placement="left" title="Download">
+                                        data-bs-toggle="tooltip" data-bs-placement="left" title="Download CV">
                                         <i class="fas fa-cloud-download-alt fa-fw fa-nav"></i>
                                     </a>
                                 </div>
@@ -185,6 +185,9 @@
                 function () {
                     $("#cv-frame").prop("src", frame[0]);
                 }, 1800);
+                if($( window ).width() <= 768){
+                    window.location.replace("m/index.html");
+                }
         });
         function clear_active() {
             $("#link-profile>i").removeClass("fa-nav-active")
@@ -194,7 +197,7 @@
         }
         function change_frame(id) {
             if (id == 0) {
-                clear_active
+                clear_active()
                 $("#link-profile>i").addClass("fa-nav-active")
             } else if (id == 1) {
                 clear_active()

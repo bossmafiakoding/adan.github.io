@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+body { 
+  padding-bottom: 40px; 
+}
+.bg-ligh-cust{
+    background-color:#DAE8F4
+}
+.bg-blue{
+    background-color: #007BFF;
+} 

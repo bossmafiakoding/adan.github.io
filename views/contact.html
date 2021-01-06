@@ -100,7 +100,7 @@
 </head>
 
 <body>
-    <div class="container-fluid animate__animated animate__bounceInUp">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <h1>Contact</h1>
@@ -131,13 +131,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 p-2">
+            <div class="col-sm-12 p-2">
                 <div class="card h-100">
                     <div class="card-body">
                         <form>
                             <div class="form-group">
                                 <label for="contact">Your Contact</label>
-                                <input type="text" class="form-control" id="contact" aria-describedby="emailHelp" placeholder="Email/Phone" onkeyup="generate_link()">
+                                <input type="text" class="form-control" id="contact" aria-describedby="emailHelp" placeholder="" onkeyup="generate_link()">
                             </div>
                             <div class="form-group">
                                 <label for="name">Your Name</label>
@@ -147,7 +147,7 @@
                                 <label for="msg">Message</label>
                                 <textarea class="form-control" id="msg" rows="3" placeholder="" onkeyup="generate_link()"></textarea>
                             </div>
-                            <a href="#" target="_blank" type="submit" class="btn btn-success" id="link-send-wa" onclick="clear_all()">
+                            <a href="#" target="_blank" type="submit" class="btn btn-success btn-block" id="link-send-wa" onclick="clear_all()">
                                 <i class="fab fa-whatsapp fa-fw" aria-hidden="true"></i>
                                 Send With WhatsApp
                             </a>
@@ -172,7 +172,7 @@
                 var contact = $("#contact").val()
                 var name = $("#name").val()
                 var msg = $("#msg").val()
-                link_whatsapp=`https://api.whatsapp.com/send?phone=6281292448028&text=%0AContact : `+contact+`%0AName : `+name+`%0AMessage : `+msg;
+                link_whatsapp=`https://api.whatsapp.com/send?phone=6281292448028&text=Contact : `+contact+`%0AName    : `+name+`%0AMessage : `+msg;
                 $("#link-send-wa").attr("href",link_whatsapp)
             }
             function clear_all(){ 

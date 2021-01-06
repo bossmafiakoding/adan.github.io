@@ -47,7 +47,7 @@
                                     <img src="assets/me.jpg" class="rounded-circle img-profile" alt="Me">
                                 </div>
                             </div>
-                            <div class="row animate__animated animate__fadeInTopLeft animate__delay-1s">
+                            <div class="row animate__animated animate__bounceIn animate__delay-1s">
                                 <div class="col p-2">
                                     <b class="h4">Adan Aidan Teras</b>
                                 </div>
@@ -60,22 +60,22 @@
                             <div
                                 class="row mt-5 justify-content-md-center animate__animated animate__fadeInLeft animate__delay-1s">
                                 <div class="col-auto">
-                                    <a href="#" class="link-light">
+                                    <a href="https://www.linkedin.com/in/adan-aidan-teras-003441171/" class="link-light" target="_blank">
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="#" class="link-light">
+                                    <a href="https://www.facebook.com/adanaidanteras" class="link-light" target="_blank">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="#" class="link-light">
+                                    <a href="https://twitter.com/adan_teras" class="link-light" target="_blank">
                                         <i class="fab fa-twitter"></i>
                                     </a>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="#" class="link-light">
+                                    <a href="https://www.instagram.com/adan_teras/" class="link-light" target="_blank">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
@@ -83,17 +83,17 @@
                             <div
                                 class="row mt-1 justify-content-md-center animate__animated animate__fadeInTopRight animate__delay-1s">
                                 <div class="col-auto">
-                                    <a href="#" class="link-light">
+                                    <a href="https://github.com/adanaidanteras" class="link-light" target="_blank">
                                         <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="#" class="link-light">
+                                    <a href="https://wa.me/6281292448028" class="link-light" target="_blank">
                                         <i class="fab fa-whatsapp"></i>
                                     </a>
                                 </div>
                                 <div class="col-auto">
-                                    <a href="#" class="link-light">
+                                    <a href="https://www.youtube.com/channel/UC5Q7akXAY8aCjIq3udJXTIQ" class="link-light" target="_blank">
                                         <i class="fab fa-youtube"></i>
                                     </a>
                                 </div>
@@ -101,7 +101,7 @@
                             <div
                                 class="row mt-1 justify-content-md-center animate__animated animate__fadeIn animate__delay-2s">
                                 <div class="col-sm-12 mt-5">
-                                    <small>© 2020 All rights reserved.</small>
+                                    <small>© </small><small id="year"></small><small> All rights reserved.</small>
                                 </div>
                             </div>
                         </div>
@@ -181,6 +181,9 @@
             "https://drive.google.com/file/d/1x2qnoC6ek7QEawwt2wtt58nJQ6hLbQYc/preview",
         ];
         $(document).ready(function () {
+            var this_year = new Date();
+            $("#year").html(this_year.getFullYear()); 
+
             setTimeout(
                 function () {
                     $("#cv-frame").prop("src", frame[0]);

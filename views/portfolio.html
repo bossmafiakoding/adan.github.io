@@ -92,36 +92,93 @@
         @media (min-width: 768px) {
             .h-md-250 { height: 250px; }
         }
-
+        .shadow {
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid animate__animated animate__bounceInUp">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <h1>Portfolio</h1>
             </div>
         </div>
         
-        <div class="nav-scroller py-1 mb-4 mt-4">
+        <!-- <div class="nav-scroller py-1 mb-4 mt-4">
             <nav class="nav d-flex justify-content-between">
-            <a class="p-2 text-muted" href="#">All</a>
-            <a class="p-2 text-muted" href="#">UI/UX Design</a>
-            <a class="p-2 text-muted" href="#">Web Dev</a>
-            <a class="p-2 text-muted" href="#">Desktop Dev</a>
-            <a class="p-2 text-muted" href="#">Mobile Dev</a>
-            <a class="p-2 text-muted" href="#">DevOps</a>
-        </nav>
-        </div>
+                <a class="p-2 text-muted" href="#">All</a>
+                <a class="p-2 text-muted" href="#">UI/UX Design</a>
+                <a class="p-2 text-muted" href="#">Web Dev</a>
+                <a class="p-2 text-muted" href="#">Desktop Dev</a>
+                <a class="p-2 text-muted" href="#">Mobile Dev</a>
+                <a class="p-2 text-muted" href="#">DevOps</a>
+            </nav>
+        </div> -->
         <div class="row" id="list_portfolio">
-            <div class="col-sm-6">
-                <div class="card m-2">
-                    <img src="https://i.pinimg.com/originals/36/bc/74/36bc74ebbedaa9566a0e343b83fee876.png" alt="" class="card-img-top img-cert">
-                    <div class="card-body h-100">
-                        <b class="card-title">Aplikasi XXX</b>
+            <div class="col-sm-6 p-3">
+                <div class="card shadow h-100">
+                    <img src="../assets/img/portpolio/appmargin.png" alt="" class="card-img-top img-cert">
+                    <div class="card-body">
+                        <b class="card-title">Aplikasi Margin IN/OUT</b>
                         <p class="card-text m-0">
-                            <small>Menggunakan</small>
+                            <small>Desktop Apps Menggunakan C# .Net Framework dengan Fitur Kompleks dan Integrasi keberbagai Service, API, SMTP dan Multi Database (MySQL dan SQL Server)</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-3">
+                <div class="card shadow h-100">
+                    <img src="../assets/img/portpolio/webperformancecabang.png" alt="" class="card-img-top img-cert">
+                    <div class="card-body">
+                        <b class="card-title">Dasboard Performance Cabang New Account, New Margin, Net Margin, Volume Lot, Equity, PL, Active Client, Achievement</b>
+                        <p class="card-text m-0">
+                            <small>Web Apps Menggunakan .Net Core, SQL Server, Jquery, Bootstrap, Highcharts</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-3">
+                <div class="card shadow h-100">
+                    <img src="../assets/img/portpolio/soappermata.png" alt="" class="card-img-top img-cert">
+                    <div class="card-body">
+                        <b class="card-title">Integrasi ke Bank Permata - SOAP</b>
+                        <p class="card-text m-0">
+                            <small>Menggunakan .Net Core, Mysql, SoapCore</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-3">
+                <div class="card shadow h-100">
+                    <img src="../assets/img/portpolio/bcaapi.png" alt="" class="card-img-top img-cert">
+                    <div class="card-body">
+                        <b class="card-title">Integrasi ke Bank BCA - RESTful API</b>
+                        <p class="card-text m-0">
+                            <small>CodeIgniter, RESTful API, Oauth2, Mysql</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-3">
+                <div class="card shadow h-100">
+                    <img src="../assets/img/portpolio/service.png" alt="" class="card-img-top img-cert">
+                    <div class="card-body">
+                        <b class="card-title">Pembuatan Service-service untuk integrasi dari beberapa Service (SSH, Database, Web Server, Socket, kestrel) yang berbeda</b>
+                        <p class="card-text m-0">
+                            <small>C#, .Net Core, MySQL, SQL Server, RESTfull API, SSH, Database, Web Server, Socket, kestrel</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-3">
+                <div class="card shadow h-100">
+                    <img src="../assets/img/portpolio/confrence.png" alt="" class="card-img-top img-cert">
+                    <div class="card-body">
+                        <b class="card-title">Web Aplikasi Untuk Management Room Confrence dan Integrasi dengan Bigbluebutton</b>
+                        <p class="card-text m-0">
+                            <small>Laravel, RESTfull API</small>
                         </p>
                     </div>
                 </div>
@@ -136,57 +193,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script>
-        var frame = [
-            {
-                img: "https://drive.google.com/uc?export=view&id=1VtqiSHWErvzy5_9VKb98n5MsjdmpPnfl",
-                title: "Start-up Developer Inovasi",
-                nomor: "NO : 421/474/SMK1-BP3WILVII",
-                tgl: "24 Oktober 2017"
-            },
-            {
-                img: "https://drive.google.com/uc?export=view&id=1V_BJa3VmuS8kemMvkW4ZHWiN6eclOx32",
-                title: "Lomba Kompetensi Siswa Sekolah (LKS)",
-                nomor: "NO : 891/1864/BP.3 Wil. VII",
-                tgl: "18 September 2017"
-            },
-            {
-                img: "https://drive.google.com/uc?export=view&id=1V_BJa3VmuS8kemMvkW4ZHWiN6eclOsx32",
-                title: "Lomba Fisika Jurusan",
-                nomor: "NO : -",
-                tgl: "18 September 2017"
-            },
-            {
-                img: "https://drive.google.com/uc?export=view&id=1kQ3FRlTQQiPzgfYYY4aR6yGDTo6VWSVJ",
-                title: "Seminar Wajib Entrepreneur",
-                nomor: "NO : -",
-                tgl: "15 Oktober 2020"
-            }
-        ];
-        $(document).ready(function () {
-            var text_append = ``;
-            frame.forEach(element => {
-                text_append += `
-                    <div class="col-sm-6">
-                        <div class="card mb-3">
-                            <img src="`+ element.img + `" alt="" class="card-img-top img-cert">
-                            <div class="card-body h-100">
-                                <b class="card-title">`+ element.title + `</b>
-                                <p class="card-text m-0">
-                                    <small>`+ element.nomor + `</small>
-                                </p>
-                                <p class="card-text m-0">
-                                    <small class="text-muted">`+ element.tgl + `</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
-            $('#list_cert').html(text_append);
-        });  
-    </script>
+        crossorigin="anonymous"></script> 
 </body>
 
 </html>
